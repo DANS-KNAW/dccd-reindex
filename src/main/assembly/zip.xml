@@ -1,0 +1,45 @@
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
+  <id>bin</id>
+  <formats>
+    <!-- tar.gz &| tar.bz2 &| zip -->
+    <format>zip</format>
+  </formats>
+  <baseDirectory>dccd-reindex</baseDirectory>
+  <fileSets>
+    <fileSet>
+        <!-- keep - unix - lf - dos - crlf -->
+      <lineEnding>unix</lineEnding>
+      <includes>
+      <!-- 
+      	<include>${project.basedir}/cfg/*.*</include>
+        <include>${project.basedir}/etc/*.*</include>
+        <include>${project.basedir}/ext/*.*</include>
+        <include>${project.basedir}/xslt/**/*.*</include>
+         -->
+        <include>${project.basedir}/update.sh</include>
+        <include>${project.basedir}/README.txt</include>
+      </includes>
+      <fileMode>644</fileMode>
+      <directoryMode>755</directoryMode>
+    </fileSet>
+    <fileSet>
+      <directory>${project.build.directory}</directory>
+      <outputDirectory>.</outputDirectory>
+      <includes>
+        <include>*.jar</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+  <dependencySets>
+    <dependencySet>
+        <outputDirectory>lib</outputDirectory>
+        <!-- exclude project directory, maybe not needed anymore
+        <excludes>
+            <exclude>nl.knaw.dans.easy:dccd-reindex</exclude>
+        </excludes>
+         -->
+    </dependencySet>
+  </dependencySets>
+</assembly>

@@ -1,0 +1,636 @@
+INFO 2013-05-28 08:10:22,446 [main] - Constructed new Fedora for baseURL http://192.168.54.131:8080/fedora
+INFO 2013-05-28 08:10:22,472 [main] - Added converter for namespace 'dans-jumpoff': nl.knaw.dans.common.fedora.store.JumpoffDmoConverter@46b4be3d
+INFO 2013-05-28 08:10:22,493 [main] - Added converter for namespace 'dccd': nl.knaw.dans.dccd.repository.fedora.DccdProjectConverter@60cbf9bd
+INFO 2013-05-28 08:10:22,517 [main] - Getting sid list for all data model object with content model fedora-system:DCCD-PROJECT
+DEBUG 2013-05-28 08:10:22,608 [main] - FedoraStore executing SparQL: select ?s from <#ri> where { ?s <info:fedora/fedora-system:def/model#hasModel> <info:fedora/fedora-system:DCCD-PROJECT> }
+INFO 2013-05-28 08:10:22,655 [main] - Instantiated a FedoraClient for http://192.168.54.131:8080/fedora
+INFO 2013-05-28 08:10:23,053 [main] - Store returned 13 sids
+DEBUG 2013-05-28 08:10:23,053 [main] - Now starting reindex process
+DEBUG 2013-05-28 08:10:23,053 [main] - Getting object dccd:1 from store
+DEBUG 2013-05-28 08:10:25,312 [main] - Retrieved objectXML. sid=dccd:1
+DEBUG 2013-05-28 08:10:25,497 [main] - Found original file with name: dccd-webapp-testdata-minimal-AtGouda-v_2_tridas.xml, unit id: ORIGINAL_FILE_1
+DEBUG 2013-05-28 08:10:25,499 [main] - Found 1 original files
+DEBUG 2013-05-28 08:10:25,499 [main] - Found 0 associated files
+DEBUG 2013-05-28 08:10:25,499 [main] - Retrieving Dublin Core metadata for digital object. sid=dccd:1
+DEBUG 2013-05-28 08:10:25,522 [main] - Retrieving entityTree from id: ETS
+DEBUG 2013-05-28 08:10:25,531 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:25,531 [main] - getting subtree of Entity : ProjectEntity
+DEBUG 2013-05-28 08:10:25,531 [main] - getting subtree of Entity : ObjectEntity
+DEBUG 2013-05-28 08:10:25,531 [main] - getting subtree of Entity : ElementEntity
+DEBUG 2013-05-28 08:10:25,531 [main] - getting subtree of Entity : SampleEntity
+DEBUG 2013-05-28 08:10:25,531 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:25,531 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:25,531 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:25,531 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:25,531 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:25,531 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:25,531 [main] - getting subtree of Entity : DerivedSeriesEntity
+DEBUG 2013-05-28 08:10:25,531 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:25,531 [main] - Retrieving entity from id: TF1
+DEBUG 2013-05-28 08:10:26,162 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,164 [main] - Retrieving entity from id: TF2
+DEBUG 2013-05-28 08:10:26,166 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,166 [main] - Retrieving entity from id: TF3
+DEBUG 2013-05-28 08:10:26,168 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,168 [main] - Retrieving entity from id: TF4
+DEBUG 2013-05-28 08:10:26,169 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,169 [main] - Retrieving entity from id: TF5
+DEBUG 2013-05-28 08:10:26,170 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,170 [main] - Retrieving entity from id: TF6
+DEBUG 2013-05-28 08:10:26,172 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,172 [main] - Retrieving entity from id: TF7
+DEBUG 2013-05-28 08:10:26,173 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,173 [main] - Retrieving entity from id: TF8
+DEBUG 2013-05-28 08:10:26,175 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,175 [main] - Retrieving entity from id: TF9
+DEBUG 2013-05-28 08:10:26,177 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,177 [main] - Retrieving entity from id: TF10
+DEBUG 2013-05-28 08:10:26,179 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,179 [main] - Retrieving entity from id: TF11
+DEBUG 2013-05-28 08:10:26,181 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,181 [main] - Retrieving entity from id: TF12
+DEBUG 2013-05-28 08:10:26,182 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,182 [main] - Retrieving vocabulary: VOCTF
+DEBUG 2013-05-28 08:10:26,268 [main] - Successfully got object dccd:1 from store
+DEBUG 2013-05-28 08:10:26,272 [main] - Indexing WGS84 coordinates: [52.013149, 4.74] from: WGS 84
+DEBUG 2013-05-28 08:10:26,303 [main] - Solr: Opening new connection to http://192.168.54.131:8080/solr/dendro
+WARN 2013-05-28 08:10:26,303 [main] - CommonsHttpSolrServer: maximum Retries 3 > 1. Maximum recommended retries is 1.
+INFO 2013-05-28 08:10:26,451 [main] - Solr: Indexed 1 documents.
+INFO 2013-05-28 08:10:26,462 [main] - Solr: Indexed 1 documents.
+DEBUG 2013-05-28 08:10:26,462 [main] - Reindexed dccd:1
+DEBUG 2013-05-28 08:10:26,462 [main] - Getting object dccd:11 from store
+DEBUG 2013-05-28 08:10:26,549 [main] - Retrieved objectXML. sid=dccd:11
+DEBUG 2013-05-28 08:10:26,562 [main] - Found original file with name: dccd-webapp-testdata-minimal-v_2_tridas.xml, unit id: ORIGINAL_FILE_1
+DEBUG 2013-05-28 08:10:26,562 [main] - Found 1 original files
+DEBUG 2013-05-28 08:10:26,562 [main] - Found 0 associated files
+DEBUG 2013-05-28 08:10:26,562 [main] - Retrieving Dublin Core metadata for digital object. sid=dccd:11
+DEBUG 2013-05-28 08:10:26,564 [main] - Retrieving entityTree from id: ETS
+DEBUG 2013-05-28 08:10:26,564 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,564 [main] - getting subtree of Entity : ProjectEntity
+DEBUG 2013-05-28 08:10:26,564 [main] - getting subtree of Entity : ObjectEntity
+DEBUG 2013-05-28 08:10:26,564 [main] - getting subtree of Entity : ElementEntity
+DEBUG 2013-05-28 08:10:26,564 [main] - getting subtree of Entity : SampleEntity
+DEBUG 2013-05-28 08:10:26,565 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:26,565 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:26,565 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:26,565 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:26,565 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:26,565 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:26,565 [main] - getting subtree of Entity : DerivedSeriesEntity
+DEBUG 2013-05-28 08:10:26,565 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:26,565 [main] - Retrieving entity from id: TF1
+DEBUG 2013-05-28 08:10:26,567 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,567 [main] - Retrieving entity from id: TF2
+DEBUG 2013-05-28 08:10:26,569 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,569 [main] - Retrieving entity from id: TF3
+DEBUG 2013-05-28 08:10:26,571 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,571 [main] - Retrieving entity from id: TF4
+DEBUG 2013-05-28 08:10:26,573 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,573 [main] - Retrieving entity from id: TF5
+DEBUG 2013-05-28 08:10:26,574 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,574 [main] - Retrieving entity from id: TF6
+DEBUG 2013-05-28 08:10:26,575 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,575 [main] - Retrieving entity from id: TF7
+DEBUG 2013-05-28 08:10:26,577 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,577 [main] - Retrieving entity from id: TF8
+DEBUG 2013-05-28 08:10:26,579 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,579 [main] - Retrieving entity from id: TF9
+DEBUG 2013-05-28 08:10:26,581 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,581 [main] - Retrieving entity from id: TF10
+DEBUG 2013-05-28 08:10:26,583 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,583 [main] - Retrieving entity from id: TF11
+DEBUG 2013-05-28 08:10:26,585 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,585 [main] - Retrieving entity from id: TF12
+DEBUG 2013-05-28 08:10:26,588 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,588 [main] - Retrieving vocabulary: VOCTF
+DEBUG 2013-05-28 08:10:26,598 [main] - Successfully got object dccd:11 from store
+DEBUG 2013-05-28 08:10:26,599 [main] - Indexing WGS84 coordinates: [51.92261, 4.00969] from: WGS 84
+INFO 2013-05-28 08:10:26,624 [main] - Solr: Indexed 1 documents.
+INFO 2013-05-28 08:10:26,657 [main] - Solr: Indexed 1 documents.
+DEBUG 2013-05-28 08:10:26,657 [main] - Reindexed dccd:11
+DEBUG 2013-05-28 08:10:26,657 [main] - Getting object dccd:12 from store
+DEBUG 2013-05-28 08:10:26,709 [main] - Retrieved objectXML. sid=dccd:12
+DEBUG 2013-05-28 08:10:26,722 [main] - Found original file with name: dccd-webapp-testdata-minimal-v_2_tridas.xml, unit id: ORIGINAL_FILE_1
+DEBUG 2013-05-28 08:10:26,722 [main] - Found 1 original files
+DEBUG 2013-05-28 08:10:26,722 [main] - Found 0 associated files
+DEBUG 2013-05-28 08:10:26,722 [main] - Retrieving Dublin Core metadata for digital object. sid=dccd:12
+DEBUG 2013-05-28 08:10:26,724 [main] - Retrieving entityTree from id: ETS
+DEBUG 2013-05-28 08:10:26,724 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,724 [main] - getting subtree of Entity : ProjectEntity
+DEBUG 2013-05-28 08:10:26,724 [main] - getting subtree of Entity : ObjectEntity
+DEBUG 2013-05-28 08:10:26,724 [main] - getting subtree of Entity : ElementEntity
+DEBUG 2013-05-28 08:10:26,724 [main] - getting subtree of Entity : SampleEntity
+DEBUG 2013-05-28 08:10:26,724 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:26,724 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:26,724 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:26,724 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:26,724 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:26,724 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:26,724 [main] - getting subtree of Entity : DerivedSeriesEntity
+DEBUG 2013-05-28 08:10:26,724 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:26,724 [main] - Retrieving entity from id: TF1
+DEBUG 2013-05-28 08:10:26,726 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,727 [main] - Retrieving entity from id: TF2
+DEBUG 2013-05-28 08:10:26,728 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,728 [main] - Retrieving entity from id: TF3
+DEBUG 2013-05-28 08:10:26,730 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,730 [main] - Retrieving entity from id: TF4
+DEBUG 2013-05-28 08:10:26,731 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,731 [main] - Retrieving entity from id: TF5
+DEBUG 2013-05-28 08:10:26,732 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,732 [main] - Retrieving entity from id: TF6
+DEBUG 2013-05-28 08:10:26,734 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,734 [main] - Retrieving entity from id: TF7
+DEBUG 2013-05-28 08:10:26,735 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,735 [main] - Retrieving entity from id: TF8
+DEBUG 2013-05-28 08:10:26,737 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,737 [main] - Retrieving entity from id: TF9
+DEBUG 2013-05-28 08:10:26,739 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,739 [main] - Retrieving entity from id: TF10
+DEBUG 2013-05-28 08:10:26,741 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,741 [main] - Retrieving entity from id: TF11
+DEBUG 2013-05-28 08:10:26,742 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,742 [main] - Retrieving entity from id: TF12
+DEBUG 2013-05-28 08:10:26,744 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,744 [main] - Retrieving vocabulary: VOCTF
+DEBUG 2013-05-28 08:10:26,754 [main] - Successfully got object dccd:12 from store
+DEBUG 2013-05-28 08:10:26,755 [main] - Indexing WGS84 coordinates: [51.92261, 4.00969] from: WGS 84
+INFO 2013-05-28 08:10:26,777 [main] - Solr: Indexed 1 documents.
+INFO 2013-05-28 08:10:26,788 [main] - Solr: Indexed 1 documents.
+DEBUG 2013-05-28 08:10:26,788 [main] - Reindexed dccd:12
+DEBUG 2013-05-28 08:10:26,788 [main] - Getting object dccd:13 from store
+DEBUG 2013-05-28 08:10:26,836 [main] - Retrieved objectXML. sid=dccd:13
+DEBUG 2013-05-28 08:10:26,846 [main] - Found original file with name: dccd-webapp-testdata-minimal-v_2_tridas.xml, unit id: ORIGINAL_FILE_1
+DEBUG 2013-05-28 08:10:26,846 [main] - Found 1 original files
+DEBUG 2013-05-28 08:10:26,846 [main] - Found 0 associated files
+DEBUG 2013-05-28 08:10:26,846 [main] - Retrieving Dublin Core metadata for digital object. sid=dccd:13
+DEBUG 2013-05-28 08:10:26,847 [main] - Retrieving entityTree from id: ETS
+DEBUG 2013-05-28 08:10:26,848 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,848 [main] - getting subtree of Entity : ProjectEntity
+DEBUG 2013-05-28 08:10:26,848 [main] - getting subtree of Entity : ObjectEntity
+DEBUG 2013-05-28 08:10:26,848 [main] - getting subtree of Entity : ElementEntity
+DEBUG 2013-05-28 08:10:26,848 [main] - getting subtree of Entity : SampleEntity
+DEBUG 2013-05-28 08:10:26,848 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:26,848 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:26,848 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:26,848 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:26,848 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:26,848 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:26,848 [main] - getting subtree of Entity : DerivedSeriesEntity
+DEBUG 2013-05-28 08:10:26,848 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:26,848 [main] - Retrieving entity from id: TF1
+DEBUG 2013-05-28 08:10:26,850 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,850 [main] - Retrieving entity from id: TF2
+DEBUG 2013-05-28 08:10:26,852 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,852 [main] - Retrieving entity from id: TF3
+DEBUG 2013-05-28 08:10:26,854 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,854 [main] - Retrieving entity from id: TF4
+DEBUG 2013-05-28 08:10:26,856 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,856 [main] - Retrieving entity from id: TF5
+DEBUG 2013-05-28 08:10:26,857 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,857 [main] - Retrieving entity from id: TF6
+DEBUG 2013-05-28 08:10:26,859 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,859 [main] - Retrieving entity from id: TF7
+DEBUG 2013-05-28 08:10:26,861 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,861 [main] - Retrieving entity from id: TF8
+DEBUG 2013-05-28 08:10:26,862 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,862 [main] - Retrieving entity from id: TF9
+DEBUG 2013-05-28 08:10:26,864 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,864 [main] - Retrieving entity from id: TF10
+DEBUG 2013-05-28 08:10:26,865 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,866 [main] - Retrieving entity from id: TF11
+DEBUG 2013-05-28 08:10:26,867 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,867 [main] - Retrieving entity from id: TF12
+DEBUG 2013-05-28 08:10:26,868 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,869 [main] - Retrieving vocabulary: VOCTF
+DEBUG 2013-05-28 08:10:26,876 [main] - Successfully got object dccd:13 from store
+DEBUG 2013-05-28 08:10:26,877 [main] - Indexing WGS84 coordinates: [51.92261, 4.00969] from: WGS 84
+INFO 2013-05-28 08:10:26,898 [main] - Solr: Indexed 1 documents.
+INFO 2013-05-28 08:10:26,915 [main] - Solr: Indexed 1 documents.
+DEBUG 2013-05-28 08:10:26,915 [main] - Reindexed dccd:13
+DEBUG 2013-05-28 08:10:26,915 [main] - Getting object dccd:14 from store
+DEBUG 2013-05-28 08:10:26,961 [main] - Retrieved objectXML. sid=dccd:14
+DEBUG 2013-05-28 08:10:26,971 [main] - Found original file with name: dccd-webapp-testdata-minimal-v_2_tridas.xml, unit id: ORIGINAL_FILE_1
+DEBUG 2013-05-28 08:10:26,971 [main] - Found 1 original files
+DEBUG 2013-05-28 08:10:26,971 [main] - Found 0 associated files
+DEBUG 2013-05-28 08:10:26,971 [main] - Retrieving Dublin Core metadata for digital object. sid=dccd:14
+DEBUG 2013-05-28 08:10:26,972 [main] - Retrieving entityTree from id: ETS
+DEBUG 2013-05-28 08:10:26,973 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,973 [main] - getting subtree of Entity : ProjectEntity
+DEBUG 2013-05-28 08:10:26,973 [main] - getting subtree of Entity : ObjectEntity
+DEBUG 2013-05-28 08:10:26,973 [main] - getting subtree of Entity : ElementEntity
+DEBUG 2013-05-28 08:10:26,973 [main] - getting subtree of Entity : SampleEntity
+DEBUG 2013-05-28 08:10:26,973 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:26,973 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:26,973 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:26,973 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:26,973 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:26,973 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:26,973 [main] - getting subtree of Entity : DerivedSeriesEntity
+DEBUG 2013-05-28 08:10:26,973 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:26,973 [main] - Retrieving entity from id: TF1
+DEBUG 2013-05-28 08:10:26,977 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,977 [main] - Retrieving entity from id: TF2
+DEBUG 2013-05-28 08:10:26,978 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,978 [main] - Retrieving entity from id: TF3
+DEBUG 2013-05-28 08:10:26,979 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,980 [main] - Retrieving entity from id: TF4
+DEBUG 2013-05-28 08:10:26,980 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,981 [main] - Retrieving entity from id: TF5
+DEBUG 2013-05-28 08:10:26,981 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,981 [main] - Retrieving entity from id: TF6
+DEBUG 2013-05-28 08:10:26,982 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,982 [main] - Retrieving entity from id: TF7
+DEBUG 2013-05-28 08:10:26,984 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,984 [main] - Retrieving entity from id: TF8
+DEBUG 2013-05-28 08:10:26,985 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,985 [main] - Retrieving entity from id: TF9
+DEBUG 2013-05-28 08:10:26,987 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,987 [main] - Retrieving entity from id: TF10
+DEBUG 2013-05-28 08:10:26,988 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,988 [main] - Retrieving entity from id: TF11
+DEBUG 2013-05-28 08:10:26,990 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,990 [main] - Retrieving entity from id: TF12
+DEBUG 2013-05-28 08:10:26,991 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:26,991 [main] - Retrieving vocabulary: VOCTF
+DEBUG 2013-05-28 08:10:26,999 [main] - Successfully got object dccd:14 from store
+DEBUG 2013-05-28 08:10:26,999 [main] - Indexing WGS84 coordinates: [51.92261, 4.00969] from: WGS 84
+INFO 2013-05-28 08:10:27,026 [main] - Solr: Indexed 1 documents.
+INFO 2013-05-28 08:10:27,037 [main] - Solr: Indexed 1 documents.
+DEBUG 2013-05-28 08:10:27,037 [main] - Reindexed dccd:14
+DEBUG 2013-05-28 08:10:27,037 [main] - Getting object dccd:15 from store
+DEBUG 2013-05-28 08:10:27,103 [main] - Retrieved objectXML. sid=dccd:15
+DEBUG 2013-05-28 08:10:27,111 [main] - Found original file with name: dccd-webapp-testdata-minimal-v_2_tridas.xml, unit id: ORIGINAL_FILE_1
+DEBUG 2013-05-28 08:10:27,111 [main] - Found 1 original files
+DEBUG 2013-05-28 08:10:27,111 [main] - Found 0 associated files
+DEBUG 2013-05-28 08:10:27,111 [main] - Retrieving Dublin Core metadata for digital object. sid=dccd:15
+DEBUG 2013-05-28 08:10:27,112 [main] - Retrieving entityTree from id: ETS
+DEBUG 2013-05-28 08:10:27,112 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,112 [main] - getting subtree of Entity : ProjectEntity
+DEBUG 2013-05-28 08:10:27,112 [main] - getting subtree of Entity : ObjectEntity
+DEBUG 2013-05-28 08:10:27,112 [main] - getting subtree of Entity : ElementEntity
+DEBUG 2013-05-28 08:10:27,113 [main] - getting subtree of Entity : SampleEntity
+DEBUG 2013-05-28 08:10:27,113 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:27,113 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:27,113 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,113 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:27,113 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:27,113 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,113 [main] - getting subtree of Entity : DerivedSeriesEntity
+DEBUG 2013-05-28 08:10:27,113 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,113 [main] - Retrieving entity from id: TF1
+DEBUG 2013-05-28 08:10:27,114 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,114 [main] - Retrieving entity from id: TF2
+DEBUG 2013-05-28 08:10:27,116 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,116 [main] - Retrieving entity from id: TF3
+DEBUG 2013-05-28 08:10:27,117 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,117 [main] - Retrieving entity from id: TF4
+DEBUG 2013-05-28 08:10:27,118 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,118 [main] - Retrieving entity from id: TF5
+DEBUG 2013-05-28 08:10:27,119 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,119 [main] - Retrieving entity from id: TF6
+DEBUG 2013-05-28 08:10:27,120 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,120 [main] - Retrieving entity from id: TF7
+DEBUG 2013-05-28 08:10:27,122 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,122 [main] - Retrieving entity from id: TF8
+DEBUG 2013-05-28 08:10:27,124 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,124 [main] - Retrieving entity from id: TF9
+DEBUG 2013-05-28 08:10:27,125 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,125 [main] - Retrieving entity from id: TF10
+DEBUG 2013-05-28 08:10:27,127 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,127 [main] - Retrieving entity from id: TF11
+DEBUG 2013-05-28 08:10:27,128 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,128 [main] - Retrieving entity from id: TF12
+DEBUG 2013-05-28 08:10:27,129 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,129 [main] - Retrieving vocabulary: VOCTF
+DEBUG 2013-05-28 08:10:27,137 [main] - Successfully got object dccd:15 from store
+DEBUG 2013-05-28 08:10:27,137 [main] - Indexing WGS84 coordinates: [51.92261, 4.00969] from: WGS 84
+INFO 2013-05-28 08:10:27,159 [main] - Solr: Indexed 1 documents.
+INFO 2013-05-28 08:10:27,166 [main] - Solr: Indexed 1 documents.
+DEBUG 2013-05-28 08:10:27,166 [main] - Reindexed dccd:15
+DEBUG 2013-05-28 08:10:27,166 [main] - Getting object dccd:16 from store
+DEBUG 2013-05-28 08:10:27,205 [main] - Retrieved objectXML. sid=dccd:16
+DEBUG 2013-05-28 08:10:27,212 [main] - Found original file with name: dccd-webapp-testdata-minimal-v_2_tridas.xml, unit id: ORIGINAL_FILE_1
+DEBUG 2013-05-28 08:10:27,212 [main] - Found 1 original files
+DEBUG 2013-05-28 08:10:27,212 [main] - Found 0 associated files
+DEBUG 2013-05-28 08:10:27,212 [main] - Retrieving Dublin Core metadata for digital object. sid=dccd:16
+DEBUG 2013-05-28 08:10:27,213 [main] - Retrieving entityTree from id: ETS
+DEBUG 2013-05-28 08:10:27,214 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,214 [main] - getting subtree of Entity : ProjectEntity
+DEBUG 2013-05-28 08:10:27,214 [main] - getting subtree of Entity : ObjectEntity
+DEBUG 2013-05-28 08:10:27,214 [main] - getting subtree of Entity : ElementEntity
+DEBUG 2013-05-28 08:10:27,214 [main] - getting subtree of Entity : SampleEntity
+DEBUG 2013-05-28 08:10:27,214 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:27,214 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:27,214 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,214 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:27,214 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:27,214 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,214 [main] - getting subtree of Entity : DerivedSeriesEntity
+DEBUG 2013-05-28 08:10:27,214 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,214 [main] - Retrieving entity from id: TF1
+DEBUG 2013-05-28 08:10:27,216 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,216 [main] - Retrieving entity from id: TF2
+DEBUG 2013-05-28 08:10:27,217 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,217 [main] - Retrieving entity from id: TF3
+DEBUG 2013-05-28 08:10:27,218 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,218 [main] - Retrieving entity from id: TF4
+DEBUG 2013-05-28 08:10:27,219 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,219 [main] - Retrieving entity from id: TF5
+DEBUG 2013-05-28 08:10:27,220 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,220 [main] - Retrieving entity from id: TF6
+DEBUG 2013-05-28 08:10:27,221 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,221 [main] - Retrieving entity from id: TF7
+DEBUG 2013-05-28 08:10:27,223 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,223 [main] - Retrieving entity from id: TF8
+DEBUG 2013-05-28 08:10:27,224 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,224 [main] - Retrieving entity from id: TF9
+DEBUG 2013-05-28 08:10:27,226 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,226 [main] - Retrieving entity from id: TF10
+DEBUG 2013-05-28 08:10:27,227 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,227 [main] - Retrieving entity from id: TF11
+DEBUG 2013-05-28 08:10:27,229 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,229 [main] - Retrieving entity from id: TF12
+DEBUG 2013-05-28 08:10:27,230 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,230 [main] - Retrieving vocabulary: VOCTF
+DEBUG 2013-05-28 08:10:27,237 [main] - Successfully got object dccd:16 from store
+DEBUG 2013-05-28 08:10:27,237 [main] - Indexing WGS84 coordinates: [51.92261, 4.00969] from: WGS 84
+INFO 2013-05-28 08:10:27,257 [main] - Solr: Indexed 1 documents.
+INFO 2013-05-28 08:10:27,271 [main] - Solr: Indexed 1 documents.
+DEBUG 2013-05-28 08:10:27,271 [main] - Reindexed dccd:16
+DEBUG 2013-05-28 08:10:27,271 [main] - Getting object dccd:17 from store
+DEBUG 2013-05-28 08:10:27,320 [main] - Retrieved objectXML. sid=dccd:17
+DEBUG 2013-05-28 08:10:27,327 [main] - Found original file with name: dccd-webapp-testdata-minimal-v_2_tridas.xml, unit id: ORIGINAL_FILE_1
+DEBUG 2013-05-28 08:10:27,327 [main] - Found 1 original files
+DEBUG 2013-05-28 08:10:27,327 [main] - Found 0 associated files
+DEBUG 2013-05-28 08:10:27,327 [main] - Retrieving Dublin Core metadata for digital object. sid=dccd:17
+DEBUG 2013-05-28 08:10:27,328 [main] - Retrieving entityTree from id: ETS
+DEBUG 2013-05-28 08:10:27,328 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,328 [main] - getting subtree of Entity : ProjectEntity
+DEBUG 2013-05-28 08:10:27,328 [main] - getting subtree of Entity : ObjectEntity
+DEBUG 2013-05-28 08:10:27,328 [main] - getting subtree of Entity : ElementEntity
+DEBUG 2013-05-28 08:10:27,328 [main] - getting subtree of Entity : SampleEntity
+DEBUG 2013-05-28 08:10:27,328 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:27,328 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:27,328 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,328 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:27,328 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:27,328 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,328 [main] - getting subtree of Entity : DerivedSeriesEntity
+DEBUG 2013-05-28 08:10:27,328 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,328 [main] - Retrieving entity from id: TF1
+DEBUG 2013-05-28 08:10:27,330 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,330 [main] - Retrieving entity from id: TF2
+DEBUG 2013-05-28 08:10:27,331 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,331 [main] - Retrieving entity from id: TF3
+DEBUG 2013-05-28 08:10:27,332 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,333 [main] - Retrieving entity from id: TF4
+DEBUG 2013-05-28 08:10:27,333 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,334 [main] - Retrieving entity from id: TF5
+DEBUG 2013-05-28 08:10:27,334 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,334 [main] - Retrieving entity from id: TF6
+DEBUG 2013-05-28 08:10:27,335 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,335 [main] - Retrieving entity from id: TF7
+DEBUG 2013-05-28 08:10:27,337 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,337 [main] - Retrieving entity from id: TF8
+DEBUG 2013-05-28 08:10:27,338 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,338 [main] - Retrieving entity from id: TF9
+DEBUG 2013-05-28 08:10:27,341 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,341 [main] - Retrieving entity from id: TF10
+DEBUG 2013-05-28 08:10:27,343 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,343 [main] - Retrieving entity from id: TF11
+DEBUG 2013-05-28 08:10:27,344 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,344 [main] - Retrieving entity from id: TF12
+DEBUG 2013-05-28 08:10:27,345 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,346 [main] - Retrieving vocabulary: VOCTF
+DEBUG 2013-05-28 08:10:27,354 [main] - Successfully got object dccd:17 from store
+DEBUG 2013-05-28 08:10:27,354 [main] - Indexing WGS84 coordinates: [51.92261, 4.00969] from: WGS 84
+INFO 2013-05-28 08:10:27,391 [main] - Solr: Indexed 1 documents.
+INFO 2013-05-28 08:10:27,401 [main] - Solr: Indexed 1 documents.
+DEBUG 2013-05-28 08:10:27,402 [main] - Reindexed dccd:17
+DEBUG 2013-05-28 08:10:27,402 [main] - Getting object dccd:18 from store
+DEBUG 2013-05-28 08:10:27,441 [main] - Retrieved objectXML. sid=dccd:18
+DEBUG 2013-05-28 08:10:27,447 [main] - Found original file with name: dccd-webapp-testdata-minimal-v_2_tridas.xml, unit id: ORIGINAL_FILE_1
+DEBUG 2013-05-28 08:10:27,447 [main] - Found 1 original files
+DEBUG 2013-05-28 08:10:27,447 [main] - Found 0 associated files
+DEBUG 2013-05-28 08:10:27,447 [main] - Retrieving Dublin Core metadata for digital object. sid=dccd:18
+DEBUG 2013-05-28 08:10:27,448 [main] - Retrieving entityTree from id: ETS
+DEBUG 2013-05-28 08:10:27,449 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,449 [main] - getting subtree of Entity : ProjectEntity
+DEBUG 2013-05-28 08:10:27,449 [main] - getting subtree of Entity : ObjectEntity
+DEBUG 2013-05-28 08:10:27,449 [main] - getting subtree of Entity : ElementEntity
+DEBUG 2013-05-28 08:10:27,449 [main] - getting subtree of Entity : SampleEntity
+DEBUG 2013-05-28 08:10:27,449 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:27,449 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:27,449 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,449 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:27,449 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:27,449 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,449 [main] - getting subtree of Entity : DerivedSeriesEntity
+DEBUG 2013-05-28 08:10:27,449 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,449 [main] - Retrieving entity from id: TF1
+DEBUG 2013-05-28 08:10:27,451 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,451 [main] - Retrieving entity from id: TF2
+DEBUG 2013-05-28 08:10:27,452 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,452 [main] - Retrieving entity from id: TF3
+DEBUG 2013-05-28 08:10:27,453 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,453 [main] - Retrieving entity from id: TF4
+DEBUG 2013-05-28 08:10:27,454 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,454 [main] - Retrieving entity from id: TF5
+DEBUG 2013-05-28 08:10:27,464 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,464 [main] - Retrieving entity from id: TF6
+DEBUG 2013-05-28 08:10:27,465 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,465 [main] - Retrieving entity from id: TF7
+DEBUG 2013-05-28 08:10:27,466 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,466 [main] - Retrieving entity from id: TF8
+DEBUG 2013-05-28 08:10:27,467 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,467 [main] - Retrieving entity from id: TF9
+DEBUG 2013-05-28 08:10:27,469 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,469 [main] - Retrieving entity from id: TF10
+DEBUG 2013-05-28 08:10:27,470 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,470 [main] - Retrieving entity from id: TF11
+DEBUG 2013-05-28 08:10:27,471 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,471 [main] - Retrieving entity from id: TF12
+DEBUG 2013-05-28 08:10:27,472 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,472 [main] - Retrieving vocabulary: VOCTF
+DEBUG 2013-05-28 08:10:27,480 [main] - Successfully got object dccd:18 from store
+DEBUG 2013-05-28 08:10:27,480 [main] - Indexing WGS84 coordinates: [51.92261, 4.00969] from: WGS 84
+INFO 2013-05-28 08:10:27,498 [main] - Solr: Indexed 1 documents.
+INFO 2013-05-28 08:10:27,510 [main] - Solr: Indexed 1 documents.
+DEBUG 2013-05-28 08:10:27,510 [main] - Reindexed dccd:18
+DEBUG 2013-05-28 08:10:27,511 [main] - Getting object dccd:19 from store
+DEBUG 2013-05-28 08:10:27,540 [main] - Retrieved objectXML. sid=dccd:19
+DEBUG 2013-05-28 08:10:27,547 [main] - Found original file with name: dccd-webapp-testdata-minimal-v_2_tridas.xml, unit id: ORIGINAL_FILE_1
+DEBUG 2013-05-28 08:10:27,547 [main] - Found 1 original files
+DEBUG 2013-05-28 08:10:27,547 [main] - Found 0 associated files
+DEBUG 2013-05-28 08:10:27,547 [main] - Retrieving Dublin Core metadata for digital object. sid=dccd:19
+DEBUG 2013-05-28 08:10:27,548 [main] - Retrieving entityTree from id: ETS
+DEBUG 2013-05-28 08:10:27,548 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,548 [main] - getting subtree of Entity : ProjectEntity
+DEBUG 2013-05-28 08:10:27,548 [main] - getting subtree of Entity : ObjectEntity
+DEBUG 2013-05-28 08:10:27,548 [main] - getting subtree of Entity : ElementEntity
+DEBUG 2013-05-28 08:10:27,548 [main] - getting subtree of Entity : SampleEntity
+DEBUG 2013-05-28 08:10:27,548 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:27,548 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:27,548 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,548 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:27,548 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:27,548 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,548 [main] - getting subtree of Entity : DerivedSeriesEntity
+DEBUG 2013-05-28 08:10:27,548 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,548 [main] - Retrieving entity from id: TF1
+DEBUG 2013-05-28 08:10:27,550 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,550 [main] - Retrieving entity from id: TF2
+DEBUG 2013-05-28 08:10:27,551 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,551 [main] - Retrieving entity from id: TF3
+DEBUG 2013-05-28 08:10:27,552 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,552 [main] - Retrieving entity from id: TF4
+DEBUG 2013-05-28 08:10:27,553 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,553 [main] - Retrieving entity from id: TF5
+DEBUG 2013-05-28 08:10:27,554 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,554 [main] - Retrieving entity from id: TF6
+DEBUG 2013-05-28 08:10:27,555 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,555 [main] - Retrieving entity from id: TF7
+DEBUG 2013-05-28 08:10:27,556 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,556 [main] - Retrieving entity from id: TF8
+DEBUG 2013-05-28 08:10:27,558 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,558 [main] - Retrieving entity from id: TF9
+DEBUG 2013-05-28 08:10:27,559 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,559 [main] - Retrieving entity from id: TF10
+DEBUG 2013-05-28 08:10:27,560 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,560 [main] - Retrieving entity from id: TF11
+DEBUG 2013-05-28 08:10:27,562 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,562 [main] - Retrieving entity from id: TF12
+DEBUG 2013-05-28 08:10:27,563 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,563 [main] - Retrieving vocabulary: VOCTF
+DEBUG 2013-05-28 08:10:27,570 [main] - Successfully got object dccd:19 from store
+DEBUG 2013-05-28 08:10:27,571 [main] - Indexing WGS84 coordinates: [51.92261, 4.00969] from: WGS 84
+INFO 2013-05-28 08:10:27,589 [main] - Solr: Indexed 1 documents.
+INFO 2013-05-28 08:10:27,613 [main] - Solr: Indexed 1 documents.
+DEBUG 2013-05-28 08:10:27,613 [main] - Reindexed dccd:19
+DEBUG 2013-05-28 08:10:27,613 [main] - Getting object dccd:20 from store
+DEBUG 2013-05-28 08:10:27,672 [main] - Retrieved objectXML. sid=dccd:20
+DEBUG 2013-05-28 08:10:27,679 [main] - Found original file with name: dccd-webapp-testdata-minimal-v_2_tridas.xml, unit id: ORIGINAL_FILE_1
+DEBUG 2013-05-28 08:10:27,679 [main] - Found 1 original files
+DEBUG 2013-05-28 08:10:27,679 [main] - Found 0 associated files
+DEBUG 2013-05-28 08:10:27,679 [main] - Retrieving Dublin Core metadata for digital object. sid=dccd:20
+DEBUG 2013-05-28 08:10:27,680 [main] - Retrieving entityTree from id: ETS
+DEBUG 2013-05-28 08:10:27,681 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,681 [main] - getting subtree of Entity : ProjectEntity
+DEBUG 2013-05-28 08:10:27,681 [main] - getting subtree of Entity : ObjectEntity
+DEBUG 2013-05-28 08:10:27,681 [main] - getting subtree of Entity : ElementEntity
+DEBUG 2013-05-28 08:10:27,681 [main] - getting subtree of Entity : SampleEntity
+DEBUG 2013-05-28 08:10:27,681 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:27,681 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:27,681 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,681 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:27,681 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:27,681 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,681 [main] - getting subtree of Entity : DerivedSeriesEntity
+DEBUG 2013-05-28 08:10:27,681 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,681 [main] - Retrieving entity from id: TF1
+DEBUG 2013-05-28 08:10:27,682 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,682 [main] - Retrieving entity from id: TF2
+DEBUG 2013-05-28 08:10:27,684 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,684 [main] - Retrieving entity from id: TF3
+DEBUG 2013-05-28 08:10:27,685 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,685 [main] - Retrieving entity from id: TF4
+DEBUG 2013-05-28 08:10:27,685 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,686 [main] - Retrieving entity from id: TF5
+DEBUG 2013-05-28 08:10:27,686 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,686 [main] - Retrieving entity from id: TF6
+DEBUG 2013-05-28 08:10:27,687 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,687 [main] - Retrieving entity from id: TF7
+DEBUG 2013-05-28 08:10:27,688 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,688 [main] - Retrieving entity from id: TF8
+DEBUG 2013-05-28 08:10:27,689 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,689 [main] - Retrieving entity from id: TF9
+DEBUG 2013-05-28 08:10:27,691 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,691 [main] - Retrieving entity from id: TF10
+DEBUG 2013-05-28 08:10:27,692 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,692 [main] - Retrieving entity from id: TF11
+DEBUG 2013-05-28 08:10:27,693 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,693 [main] - Retrieving entity from id: TF12
+DEBUG 2013-05-28 08:10:27,694 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,694 [main] - Retrieving vocabulary: VOCTF
+DEBUG 2013-05-28 08:10:27,702 [main] - Successfully got object dccd:20 from store
+DEBUG 2013-05-28 08:10:27,702 [main] - Indexing WGS84 coordinates: [51.92261, 4.00969] from: WGS 84
+INFO 2013-05-28 08:10:27,721 [main] - Solr: Indexed 1 documents.
+INFO 2013-05-28 08:10:27,736 [main] - Solr: Indexed 1 documents.
+DEBUG 2013-05-28 08:10:27,736 [main] - Reindexed dccd:20
+DEBUG 2013-05-28 08:10:27,736 [main] - Getting object dccd:21 from store
+DEBUG 2013-05-28 08:10:27,784 [main] - Retrieved objectXML. sid=dccd:21
+DEBUG 2013-05-28 08:10:27,790 [main] - Found original file with name: Minimal-with-data_tridas-andassociated.xml, unit id: ORIGINAL_FILE_1
+DEBUG 2013-05-28 08:10:27,790 [main] - Found 1 original files
+DEBUG 2013-05-28 08:10:27,790 [main] - Found associated file with name: associated1.txt, unit id: ASSOCIATED_FILE_1
+DEBUG 2013-05-28 08:10:27,791 [main] - Found associated file with name: associated2.txt, unit id: ASSOCIATED_FILE_2
+DEBUG 2013-05-28 08:10:27,791 [main] - Found 2 associated files
+DEBUG 2013-05-28 08:10:27,791 [main] - Retrieving Dublin Core metadata for digital object. sid=dccd:21
+DEBUG 2013-05-28 08:10:27,792 [main] - Retrieving entityTree from id: ETS
+DEBUG 2013-05-28 08:10:27,792 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,792 [main] - getting subtree of Entity : ProjectEntity
+DEBUG 2013-05-28 08:10:27,792 [main] - getting subtree of Entity : ObjectEntity
+DEBUG 2013-05-28 08:10:27,792 [main] - getting subtree of Entity : ElementEntity
+DEBUG 2013-05-28 08:10:27,792 [main] - getting subtree of Entity : SampleEntity
+DEBUG 2013-05-28 08:10:27,792 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:27,792 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:27,792 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,792 [main] - Retrieving entity from id: TF1
+DEBUG 2013-05-28 08:10:27,794 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,794 [main] - Retrieving entity from id: TF2
+DEBUG 2013-05-28 08:10:27,795 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,795 [main] - Retrieving entity from id: TF3
+DEBUG 2013-05-28 08:10:27,796 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,796 [main] - Retrieving entity from id: TF4
+DEBUG 2013-05-28 08:10:27,796 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,796 [main] - Retrieving entity from id: TF5
+DEBUG 2013-05-28 08:10:27,797 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,797 [main] - Retrieving entity from id: TF6
+DEBUG 2013-05-28 08:10:27,798 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,798 [main] - Retrieving entity from id: TF7
+DEBUG 2013-05-28 08:10:27,804 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,804 [main] - Retrieving vocabulary: VOCTF
+DEBUG 2013-05-28 08:10:27,811 [main] - Successfully got object dccd:21 from store
+INFO 2013-05-28 08:10:27,827 [main] - Solr: Indexed 1 documents.
+INFO 2013-05-28 08:10:27,834 [main] - Solr: Indexed 1 documents.
+DEBUG 2013-05-28 08:10:27,834 [main] - Reindexed dccd:21
+DEBUG 2013-05-28 08:10:27,834 [main] - Getting object dccd:23 from store
+DEBUG 2013-05-28 08:10:27,883 [main] - Retrieved objectXML. sid=dccd:23
+DEBUG 2013-05-28 08:10:27,891 [main] - Found original file with name: Minimal-with-data_tridas-andassociated3.xml, unit id: ORIGINAL_FILE_1
+DEBUG 2013-05-28 08:10:27,891 [main] - Found 1 original files
+DEBUG 2013-05-28 08:10:27,891 [main] - Found associated file with name: associated1.txt, unit id: ASSOCIATED_FILE_1
+DEBUG 2013-05-28 08:10:27,891 [main] - Found associated file with name: associated2.txt, unit id: ASSOCIATED_FILE_2
+DEBUG 2013-05-28 08:10:27,891 [main] - Found associated file with name: associated_noextension, unit id: ASSOCIATED_FILE_3
+DEBUG 2013-05-28 08:10:27,891 [main] - Found associated file with name: associated.pdf, unit id: ASSOCIATED_FILE_4
+DEBUG 2013-05-28 08:10:27,891 [main] - Found 4 associated files
+DEBUG 2013-05-28 08:10:27,891 [main] - Retrieving Dublin Core metadata for digital object. sid=dccd:23
+DEBUG 2013-05-28 08:10:27,892 [main] - Retrieving entityTree from id: ETS
+DEBUG 2013-05-28 08:10:27,893 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,893 [main] - getting subtree of Entity : ProjectEntity
+DEBUG 2013-05-28 08:10:27,893 [main] - getting subtree of Entity : ObjectEntity
+DEBUG 2013-05-28 08:10:27,893 [main] - getting subtree of Entity : ElementEntity
+DEBUG 2013-05-28 08:10:27,893 [main] - getting subtree of Entity : SampleEntity
+DEBUG 2013-05-28 08:10:27,893 [main] - getting subtree of Entity : RadiusEntity
+DEBUG 2013-05-28 08:10:27,893 [main] - getting subtree of Entity : MeasurementSeriesEntity
+DEBUG 2013-05-28 08:10:27,893 [main] - getting subtree of Entity : ValuesEntity
+DEBUG 2013-05-28 08:10:27,893 [main] - Retrieving entity from id: TF1
+DEBUG 2013-05-28 08:10:27,894 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,895 [main] - Retrieving entity from id: TF2
+DEBUG 2013-05-28 08:10:27,896 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,896 [main] - Retrieving entity from id: TF3
+DEBUG 2013-05-28 08:10:27,896 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,896 [main] - Retrieving entity from id: TF4
+DEBUG 2013-05-28 08:10:27,897 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,897 [main] - Retrieving entity from id: TF5
+DEBUG 2013-05-28 08:10:27,898 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,898 [main] - Retrieving entity from id: TF6
+DEBUG 2013-05-28 08:10:27,899 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,899 [main] - Retrieving entity from id: TF7
+DEBUG 2013-05-28 08:10:27,905 [main] - Dirty set to: false
+DEBUG 2013-05-28 08:10:27,905 [main] - Retrieving vocabulary: VOCTF
+DEBUG 2013-05-28 08:10:27,910 [main] - Successfully got object dccd:23 from store
+INFO 2013-05-28 08:10:27,929 [main] - Solr: Indexed 1 documents.
+INFO 2013-05-28 08:10:27,939 [main] - Solr: Indexed 1 documents.
+DEBUG 2013-05-28 08:10:27,939 [main] - Reindexed dccd:23
+INFO 2013-05-28 08:10:27,939 [main] - Solr: commit
+DEBUG 2013-05-28 08:10:28,208 [main] - Reindex process completed

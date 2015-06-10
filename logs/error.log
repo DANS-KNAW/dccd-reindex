@@ -1,0 +1,1 @@
+WARN 2013-05-28 08:10:26,303 [main] - CommonsHttpSolrServer: maximum Retries 3 > 1. Maximum recommended retries is 1. [setMaxRetries] # org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.(CommonsHttpSolrServer.java:603)

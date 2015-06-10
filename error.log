@@ -1,0 +1,429 @@
+-----------------------------------------------
+Error during dccd:1 on reindex
+
+Exception = org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+nl.knaw.dans.common.solr.exceptions.SolrSearchEngineException: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:474)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindex(Reindexer.java:113)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindexByContentModel(Reindexer.java:56)
+	at nl.knaw.dans.common.lang.reposearch.ReindexerCmdLine.execute(ReindexerCmdLine.java:177)
+	at nl.knaw.dans.easy.tools.reindex.DccdReindexer.main(DccdReindexer.java:61)
+Caused by: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:432)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:246)
+	at org.apache.solr.client.solrj.request.AbstractUpdateRequest.process(AbstractUpdateRequest.java:105)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:69)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:54)
+	at nl.knaw.dans.common.solr.SolrServerWrapper.index(SolrServerWrapper.java:45)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.doIndex(SolrSearchEngine.java:214)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:470)
+	... 4 more
+-----------------------------------------------
+-----------------------------------------------
+Error during dccd:11 on reindex
+
+Exception = org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+nl.knaw.dans.common.solr.exceptions.SolrSearchEngineException: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:474)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindex(Reindexer.java:113)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindexByContentModel(Reindexer.java:56)
+	at nl.knaw.dans.common.lang.reposearch.ReindexerCmdLine.execute(ReindexerCmdLine.java:177)
+	at nl.knaw.dans.easy.tools.reindex.DccdReindexer.main(DccdReindexer.java:61)
+Caused by: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:432)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:246)
+	at org.apache.solr.client.solrj.request.AbstractUpdateRequest.process(AbstractUpdateRequest.java:105)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:69)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:54)
+	at nl.knaw.dans.common.solr.SolrServerWrapper.index(SolrServerWrapper.java:45)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.doIndex(SolrSearchEngine.java:214)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:470)
+	... 4 more
+-----------------------------------------------
+-----------------------------------------------
+Error during dccd:12 on reindex
+
+Exception = org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+nl.knaw.dans.common.solr.exceptions.SolrSearchEngineException: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:474)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindex(Reindexer.java:113)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindexByContentModel(Reindexer.java:56)
+	at nl.knaw.dans.common.lang.reposearch.ReindexerCmdLine.execute(ReindexerCmdLine.java:177)
+	at nl.knaw.dans.easy.tools.reindex.DccdReindexer.main(DccdReindexer.java:61)
+Caused by: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:432)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:246)
+	at org.apache.solr.client.solrj.request.AbstractUpdateRequest.process(AbstractUpdateRequest.java:105)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:69)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:54)
+	at nl.knaw.dans.common.solr.SolrServerWrapper.index(SolrServerWrapper.java:45)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.doIndex(SolrSearchEngine.java:214)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:470)
+	... 4 more
+-----------------------------------------------
+-----------------------------------------------
+Error during dccd:13 on reindex
+
+Exception = org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+nl.knaw.dans.common.solr.exceptions.SolrSearchEngineException: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:474)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindex(Reindexer.java:113)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindexByContentModel(Reindexer.java:56)
+	at nl.knaw.dans.common.lang.reposearch.ReindexerCmdLine.execute(ReindexerCmdLine.java:177)
+	at nl.knaw.dans.easy.tools.reindex.DccdReindexer.main(DccdReindexer.java:61)
+Caused by: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:432)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:246)
+	at org.apache.solr.client.solrj.request.AbstractUpdateRequest.process(AbstractUpdateRequest.java:105)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:69)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:54)
+	at nl.knaw.dans.common.solr.SolrServerWrapper.index(SolrServerWrapper.java:45)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.doIndex(SolrSearchEngine.java:214)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:470)
+	... 4 more
+-----------------------------------------------
+-----------------------------------------------
+Error during dccd:14 on reindex
+
+Exception = org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+nl.knaw.dans.common.solr.exceptions.SolrSearchEngineException: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:474)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindex(Reindexer.java:113)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindexByContentModel(Reindexer.java:56)
+	at nl.knaw.dans.common.lang.reposearch.ReindexerCmdLine.execute(ReindexerCmdLine.java:177)
+	at nl.knaw.dans.easy.tools.reindex.DccdReindexer.main(DccdReindexer.java:61)
+Caused by: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:432)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:246)
+	at org.apache.solr.client.solrj.request.AbstractUpdateRequest.process(AbstractUpdateRequest.java:105)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:69)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:54)
+	at nl.knaw.dans.common.solr.SolrServerWrapper.index(SolrServerWrapper.java:45)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.doIndex(SolrSearchEngine.java:214)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:470)
+	... 4 more
+-----------------------------------------------
+-----------------------------------------------
+Error during dccd:15 on reindex
+
+Exception = org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+nl.knaw.dans.common.solr.exceptions.SolrSearchEngineException: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:474)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindex(Reindexer.java:113)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindexByContentModel(Reindexer.java:56)
+	at nl.knaw.dans.common.lang.reposearch.ReindexerCmdLine.execute(ReindexerCmdLine.java:177)
+	at nl.knaw.dans.easy.tools.reindex.DccdReindexer.main(DccdReindexer.java:61)
+Caused by: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:432)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:246)
+	at org.apache.solr.client.solrj.request.AbstractUpdateRequest.process(AbstractUpdateRequest.java:105)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:69)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:54)
+	at nl.knaw.dans.common.solr.SolrServerWrapper.index(SolrServerWrapper.java:45)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.doIndex(SolrSearchEngine.java:214)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:470)
+	... 4 more
+-----------------------------------------------
+-----------------------------------------------
+Error during dccd:16 on reindex
+
+Exception = org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+nl.knaw.dans.common.solr.exceptions.SolrSearchEngineException: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:474)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindex(Reindexer.java:113)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindexByContentModel(Reindexer.java:56)
+	at nl.knaw.dans.common.lang.reposearch.ReindexerCmdLine.execute(ReindexerCmdLine.java:177)
+	at nl.knaw.dans.easy.tools.reindex.DccdReindexer.main(DccdReindexer.java:61)
+Caused by: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:432)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:246)
+	at org.apache.solr.client.solrj.request.AbstractUpdateRequest.process(AbstractUpdateRequest.java:105)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:69)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:54)
+	at nl.knaw.dans.common.solr.SolrServerWrapper.index(SolrServerWrapper.java:45)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.doIndex(SolrSearchEngine.java:214)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:470)
+	... 4 more
+-----------------------------------------------
+-----------------------------------------------
+Error during dccd:17 on reindex
+
+Exception = org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+nl.knaw.dans.common.solr.exceptions.SolrSearchEngineException: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:474)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindex(Reindexer.java:113)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindexByContentModel(Reindexer.java:56)
+	at nl.knaw.dans.common.lang.reposearch.ReindexerCmdLine.execute(ReindexerCmdLine.java:177)
+	at nl.knaw.dans.easy.tools.reindex.DccdReindexer.main(DccdReindexer.java:61)
+Caused by: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:432)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:246)
+	at org.apache.solr.client.solrj.request.AbstractUpdateRequest.process(AbstractUpdateRequest.java:105)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:69)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:54)
+	at nl.knaw.dans.common.solr.SolrServerWrapper.index(SolrServerWrapper.java:45)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.doIndex(SolrSearchEngine.java:214)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:470)
+	... 4 more
+-----------------------------------------------
+-----------------------------------------------
+Error during dccd:18 on reindex
+
+Exception = org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+nl.knaw.dans.common.solr.exceptions.SolrSearchEngineException: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:474)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindex(Reindexer.java:113)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindexByContentModel(Reindexer.java:56)
+	at nl.knaw.dans.common.lang.reposearch.ReindexerCmdLine.execute(ReindexerCmdLine.java:177)
+	at nl.knaw.dans.easy.tools.reindex.DccdReindexer.main(DccdReindexer.java:61)
+Caused by: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:432)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:246)
+	at org.apache.solr.client.solrj.request.AbstractUpdateRequest.process(AbstractUpdateRequest.java:105)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:69)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:54)
+	at nl.knaw.dans.common.solr.SolrServerWrapper.index(SolrServerWrapper.java:45)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.doIndex(SolrSearchEngine.java:214)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:470)
+	... 4 more
+-----------------------------------------------
+-----------------------------------------------
+Error during dccd:19 on reindex
+
+Exception = org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+nl.knaw.dans.common.solr.exceptions.SolrSearchEngineException: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:474)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindex(Reindexer.java:113)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindexByContentModel(Reindexer.java:56)
+	at nl.knaw.dans.common.lang.reposearch.ReindexerCmdLine.execute(ReindexerCmdLine.java:177)
+	at nl.knaw.dans.easy.tools.reindex.DccdReindexer.main(DccdReindexer.java:61)
+Caused by: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:432)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:246)
+	at org.apache.solr.client.solrj.request.AbstractUpdateRequest.process(AbstractUpdateRequest.java:105)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:69)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:54)
+	at nl.knaw.dans.common.solr.SolrServerWrapper.index(SolrServerWrapper.java:45)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.doIndex(SolrSearchEngine.java:214)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:470)
+	... 4 more
+-----------------------------------------------
+-----------------------------------------------
+Error during dccd:20 on reindex
+
+Exception = org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+nl.knaw.dans.common.solr.exceptions.SolrSearchEngineException: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:474)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindex(Reindexer.java:113)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindexByContentModel(Reindexer.java:56)
+	at nl.knaw.dans.common.lang.reposearch.ReindexerCmdLine.execute(ReindexerCmdLine.java:177)
+	at nl.knaw.dans.easy.tools.reindex.DccdReindexer.main(DccdReindexer.java:61)
+Caused by: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:432)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:246)
+	at org.apache.solr.client.solrj.request.AbstractUpdateRequest.process(AbstractUpdateRequest.java:105)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:69)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:54)
+	at nl.knaw.dans.common.solr.SolrServerWrapper.index(SolrServerWrapper.java:45)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.doIndex(SolrSearchEngine.java:214)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:470)
+	... 4 more
+-----------------------------------------------
+-----------------------------------------------
+Error during dccd:21 on reindex
+
+Exception = org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+nl.knaw.dans.common.solr.exceptions.SolrSearchEngineException: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:474)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindex(Reindexer.java:113)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindexByContentModel(Reindexer.java:56)
+	at nl.knaw.dans.common.lang.reposearch.ReindexerCmdLine.execute(ReindexerCmdLine.java:177)
+	at nl.knaw.dans.easy.tools.reindex.DccdReindexer.main(DccdReindexer.java:61)
+Caused by: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:432)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:246)
+	at org.apache.solr.client.solrj.request.AbstractUpdateRequest.process(AbstractUpdateRequest.java:105)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:69)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:54)
+	at nl.knaw.dans.common.solr.SolrServerWrapper.index(SolrServerWrapper.java:45)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.doIndex(SolrSearchEngine.java:214)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:470)
+	... 4 more
+-----------------------------------------------
+-----------------------------------------------
+Error during dccd:23 on reindex
+
+Exception = org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+nl.knaw.dans.common.solr.exceptions.SolrSearchEngineException: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:474)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindex(Reindexer.java:113)
+	at nl.knaw.dans.common.lang.reposearch.Reindexer.reindexByContentModel(Reindexer.java:56)
+	at nl.knaw.dans.common.lang.reposearch.ReindexerCmdLine.execute(ReindexerCmdLine.java:177)
+	at nl.knaw.dans.easy.tools.reindex.DccdReindexer.main(DccdReindexer.java:61)
+Caused by: org.apache.solr.common.SolrException: Not Found
+
+Not Found
+
+request: http://192.168.54.131:8080/solr/datasets/update?wt=javabin&version=2
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:432)
+	at org.apache.solr.client.solrj.impl.CommonsHttpSolrServer.request(CommonsHttpSolrServer.java:246)
+	at org.apache.solr.client.solrj.request.AbstractUpdateRequest.process(AbstractUpdateRequest.java:105)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:69)
+	at org.apache.solr.client.solrj.SolrServer.add(SolrServer.java:54)
+	at nl.knaw.dans.common.solr.SolrServerWrapper.index(SolrServerWrapper.java:45)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.doIndex(SolrSearchEngine.java:214)
+	at nl.knaw.dans.common.solr.SolrSearchEngine.indexBeans(SolrSearchEngine.java:470)
+	... 4 more
+-----------------------------------------------
