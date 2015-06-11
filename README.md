@@ -7,5 +7,3 @@ Tips:
 When building a new Solr search index, 
 first remove the existing index in the data/index directory, 
 then to update the index run update.sh
-
-Oké, dan zo.
